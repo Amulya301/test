@@ -20,24 +20,16 @@
                 <img src="{% static 'images/light-logo.png' %}" alt="Tutest Logo" height="57px" width="137px">
             </a>
             <ul class="navbar-nav ms-auto">
-                {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account:sign-out' %}">
-                            <button class="btn btn-light" type="button">Sign out</button>
-                        </a>
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account:sign-in' %}">
-                            <button class="btn btn-outline-light" type="button">Sign in</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account:sign-up-as' %}">
-                            <button class="btn btn-light" type="button">Sign up</button>
-                        </a>
-                    </li>
-                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account:sign-in' %}">
+                        <button class="btn btn-outline-light" type="button">Sign in</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account:sign-up-as' %}">
+                        <button class="btn btn-light" type="button">Sign up</button>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
