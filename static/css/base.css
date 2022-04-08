@@ -6,9 +6,8 @@ body {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 85vh;
     width: 100vw;
-
 }
 
 nav {
@@ -56,6 +55,7 @@ footer {
     background-color: #3B4D5E;
     font-weight: bold;
 }
+
 .btn-primary:hover {
     color: #3B4D5E;
     border-color: #FDC088;
