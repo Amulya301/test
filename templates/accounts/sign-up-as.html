@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'accounts/base.html' %}
 {% load static %}
 
 {% block title %}
@@ -41,7 +41,7 @@
         <div class="col-5 mx-2 text-end">
             <a href="{% url 'account:sign-up-as-instructor' %}">
                 <button class="i-am-card text-center p-3">
-                    <img src="{% static 'images/instructor-icon.png' %}" alt="instructors icon">
+                    <img src="{% static 'images/accounts/instructor-icon.png' %}" alt="instructors icon">
                     <strong>Instructor</strong>
                 </button>
             </a>
@@ -49,7 +49,7 @@
         <div class="col-5 mx-2 text-start">
             <a href="{% url 'account:sign-up-as-tutee' %}">
                 <button class="i-am-card text-center p-3">
-                    <img src="{% static 'images/tutee-icon.png' %}" alt="tutee icon">
+                    <img src="{% static 'images/accounts/tutee-icon.png' %}" alt="tutee icon">
                     <strong>Tutee</strong>
                 </button>
             </a>
